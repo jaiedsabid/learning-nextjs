@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { prefix } from '../../utils/constants';
 
 // Local imports.
 import HeadMeta from '../components/head-meta';
@@ -13,7 +14,7 @@ export default function FirstPost() {
                 Back to <Link href="/">Home page</Link>
             </h2>
             <Image
-                src="/images/profile.jpg"
+                src={`${prefix}/images/profile.jpg`}
                 alt="Jaied Al Sabid"
                 width={420}
                 height={300}
