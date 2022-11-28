@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+    reactStrictMode: true,
+    basePath: '/learning-nextjs',
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
