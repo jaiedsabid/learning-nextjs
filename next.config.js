@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
     reactStrictMode: true,
-    assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '/',
-    basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+    assetPrefix: isProd ? '/learning-nextjs' : '',
+    basePath: isProd ? '/learning-nextjs' : '',
 };
 
 module.exports = nextConfig;
