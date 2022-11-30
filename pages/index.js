@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import { prefix } from '../utils/constants';
-import HeadMeta from './components/head-meta';
+import HeadMeta from '../components/head-meta';
 
 export default function Home() {
     return (

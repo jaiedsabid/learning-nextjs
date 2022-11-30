@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { prefix } from '../../utils/constants';
 
 // Local imports.
-import HeadMeta from '../components/head-meta';
+import HeadMeta from '../../components/head-meta';
+import { prefix } from '../../utils/constants';
 
 export default function FirstPost() {
     return (
