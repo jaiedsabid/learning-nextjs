@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 // Local Imports.
 import { Image } from '../index';
+import { classNames } from '../../utils/util-functions';
 import styles from './layout.module.scss';
 import utilStyles from '../../styles/utils.module.scss';
 
@@ -16,7 +17,10 @@ const Layout = ({ children, home }) => {
                         <Image
                             priority
                             src="/images/profile.jpg"
-                            className={utilStyles.borderCircle}
+                            className={classNames(
+                                utilStyles.borderCircle,
+                                utilStyles.objectCover
+                            )}
                             height={144}
                             width={144}
                             alt=""
