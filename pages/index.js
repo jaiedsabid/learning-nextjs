@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
+// Local imports.
 import styles from '../styles/Home.module.css';
 import { prefix } from '../utils/constants';
 import HeadMeta from '../components/head-meta';
