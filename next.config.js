@@ -6,7 +6,7 @@ const nextConfig = {
     images: {
         unoptimized: isProd ? true : false,
     },
-    assetPrefix: isProd ? '/learning-nextjs' : '',
+    assetPrefix: isProd ? '/learning-nextjs' : undefined,
     basePath: isProd ? '/learning-nextjs' : '',
 };
 
