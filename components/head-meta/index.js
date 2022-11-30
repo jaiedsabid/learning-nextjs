@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
-const siteTitle = 'Jaied Al Sabid';
+// Local imports.
+import { siteTitle } from '../../utils/constants';
 
 const HeadMeta = ({ title, description }) => {
     return (

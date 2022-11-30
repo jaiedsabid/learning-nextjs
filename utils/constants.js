@@ -1,4 +1,3 @@
-const isProd = process.env.NODE_ENV === 'production';
-const prefix = isProd ? '/learning-nextjs' : '';
-
-export { prefix, isProd };
+export const isProd = process.env.NODE_ENV === 'production';
+export const prefix = isProd ? '/learning-nextjs' : '';
+export const siteTitle = 'Jaied Al Sabid';
