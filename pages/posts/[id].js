@@ -1,21 +1,26 @@
 import React from 'react';
-import { HeadMeta, Layout } from '../../components';
+import { HeadMeta, Layout, Date } from '../../components';
 import { getAllPostIds, getPostData } from '../../lib/posts';
+
+// Styles
+import utilStyles from '../../styles/utils.module.scss';
 
 const Post = ({ postData }) => {
     return (
         <>
             <HeadMeta title={postData.title} description={postData.title} />
             <Layout>
-                {postData.title}
-                <br />
-                {postData.id}
-                <br />
-                {postData.date}
-                <br />
-                <div
-                    dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-                />
+                <article>
+                    <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+                    <div className={utilStyles.lightText}>
+                        <Date dateString={postData.date} />
+                    </div>
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: postData.contentHtml,
+                        }}
+                    />
+                </article>
             </Layout>
         </>
     );
